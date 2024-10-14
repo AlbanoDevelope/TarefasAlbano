@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os elementos do formulário */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 15px; /* Aumenta o preenchimento */
+    margin-bottom: 10px; /* Espaço entre os campos */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 600px; /* Define uma largura fixa */
+}
+
+button {
+    padding: 15px 20px; /* Aumenta o preenchimento do botão */
+    background-color: #007bff; /* Azul padrão para botões */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Estilo específico para o botão de remover */
+button.remove {
+    background-color: #dc3545; /* Vermelho para o botão de remover */
+}
+
+button.remove:hover {
+    background-color: #c82333; /* Vermelho mais escuro ao passar o mouse */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 800px; /* Define uma largura fixa para a lista */
+}
+
+li {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex; /* Usar flexbox para organizar os itens em linha */
+    justify-content: space-between; /* Espaçar os itens */
+}

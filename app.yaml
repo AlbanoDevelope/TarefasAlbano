@@ -1,0 +1,11 @@
+runtime: python
+env: flex
+entrypoint: gunicorn -b :$PORT main:app  # Certifique-se de que 'main' é o nome correto do seu arquivo Python
+
+runtime_config:
+    operating_system: "ubuntu22"
+    runtime_version: "3.10"
+
+handlers:
+  - url: /.*
+    script: auto 
